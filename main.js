@@ -4,7 +4,7 @@ const currentWeatherItemsEl = document.getElementById('current-weather-items');
 const timezone = document.getElementById('time-zone');
 const countryEl= document.getElementById('country');
 const weatherForecastEl = document.getElementById('weather-forecast');
-const currentTempEl = document.getElementById('current-temperature');
+const currentTempEl = document.getElementById('current-temp');
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
