@@ -130,7 +130,7 @@ body{
     font-weight: 100;
 }
 
-@media only screen and {max-width: 730px){
+@media only screen and (max-width: 730px){
     .container{
         padding: 20px;
     }
