@@ -6,9 +6,9 @@
 }
 
 body{
-    background: url('https: //5minvideo.id/images/2020/02/gambar-di-pantai.jpg');
+    background: url('./nature.jpg');
     background-repeat: no-repeat;
-    block-size: cover;
+    background-size: cover;
     overflow: hidden;
     height: 100vh;
     font-family: Poppins,sans-serif;

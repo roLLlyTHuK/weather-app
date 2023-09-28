@@ -9,7 +9,7 @@ const currentTempEl = document.getElementById('current-temperature');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY = '466b131df34c7ed06b5eb251571d0b62';
+const API_KEY = '5d5c35fb1183b92bdfe6f4a881ec6a63';
 
 setInterval(() => {
     const time = new Date();
@@ -29,7 +29,7 @@ getWeatherData();
 function getWeatherData() {
     navigator.geolocation.getCurrentPosition((success) => {
         const { latitude, longitude } = success.coords;
-        fetch(`https://api.openweathermap.org/data/2.5/oncall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${API_KEY}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&appid=${API_KEY}`)
             .then(res => res.json())
             .then((data) => {
                 console.log(data);
@@ -89,4 +89,4 @@ function showWeatherData(data) {
         }
     });
     weatherForecastEl.innerHTML = otherDayForCast;
-}
+};
